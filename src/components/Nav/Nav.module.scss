@@ -1,0 +1,59 @@
+.nav {
+  margin: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  button {
+    cursor: pointer;
+  }
+
+  button:hover ~ .message {
+    display: block;
+  }
+
+  .message {
+    display: none;
+    position: absolute;
+    top: 20px;
+    border: 2px solid red;
+    z-index: 2;
+    padding: 5px;
+    background-color: white;
+  }
+
+
+  &:hover > ul{
+    display: block;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+    border-top: none;
+
+    margin: 5px 0 0 0;
+    padding: 10px 10px;
+
+    width: 80%;
+    max-width: 400px;
+
+    &:hover {
+      display: block;
+    }
+
+    li {
+      text-align: start;
+      list-style-type: none;
+      padding: 3px 0;
+
+      &:nth-of-type(6) {
+        font-size: 12px;
+      }
+    }
+  }
+}
