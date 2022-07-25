@@ -13,7 +13,7 @@ function Items(): JSX.Element {
   const {beers, loading} = selector;
 
 
-  if (!beers[1]) return <>Введите что-то в поиск</>
+  if (!beers[0]) return <>Введите что-то в поиск</>
 
 
   const description = (str: string)=> {

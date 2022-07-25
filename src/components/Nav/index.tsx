@@ -10,7 +10,6 @@ import s from './Nav.module.scss';
 
 
 
-
 function Search(): JSX.Element {
 
 
@@ -40,7 +39,7 @@ function Search(): JSX.Element {
 
     if (beersFive.length) {
       inputSearch.current && 
-      (dataBeers.name = inputSearch.current.value.trim());
+      (dataBeers.name = inputSearch.current.value.trim())
 
       navigate('/beers' + routes.beer);
       dispatch(beersAction());

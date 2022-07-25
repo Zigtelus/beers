@@ -13,6 +13,12 @@
     background-color: rgba(0, 0, 0, 0.53);
   }
 
+  @media (max-width: 900px) {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
 }
 
 .item {
