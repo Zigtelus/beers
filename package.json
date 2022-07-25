@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "beers",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zigtelus.github.io",
+  "homepage": "https://zigtelus.github.io/beers",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",
@@ -50,7 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "typings-for-css-modules-loader": "^1.7.0"
   }
-
 }
