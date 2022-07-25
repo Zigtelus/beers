@@ -32,7 +32,7 @@ function Items(): JSX.Element {
         
         return <NavLink
           key={item.id}
-          to={routes.beer + '/' + item.id}
+          to={'/beers' + routes.beer + '/' + item.id}
           className={s.item}
         >
           

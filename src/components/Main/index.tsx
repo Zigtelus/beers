@@ -14,8 +14,8 @@ function Main(): JSX.Element {
     <Routes>
       <Route path={'/'} element={ <>тут будет отображаться пиво</>} />
       <Route path={'/beers'} element={ <>тут будет отображаться пиво</>} />
-      <Route path={routes.beer} element={ <Items />} />
-      <Route path={routes.beer + routes.beerId} element={ <Card /> } />
+      <Route path={'/beers' + routes.beer} element={ <Items />} />
+      <Route path={'/beers' + routes.beer + routes.beerId} element={ <Card /> } />
       <Route path="*" element={ <>error</> } />
     </Routes>
 

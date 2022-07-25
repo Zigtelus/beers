@@ -41,7 +41,7 @@ function Search(): JSX.Element {
       inputSearch.current && 
       (dataBeers.name = inputSearch.current.value.trim());
 
-      navigate(routes.beer);
+      navigate('/beers' + routes.beer);
       dispatch(beersAction());
     } else {
       setErrorMessage(true);
